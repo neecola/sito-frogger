@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #333;
+    font-size: 1rem; /* Base font size for rem units */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+header {
+    background-color: #00796b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    top: -7.5rem; /* Adjusted to completely hide the navbar */
+    width: 100%;
+    transition: top 0.3s, opacity 0.3s;
+    z-index: 1000; /* Ensure the navbar stays on top */
+    opacity: 0; /* Make the navbar invisible initially */
+}
+
+header.visible {
+    top: 0;
+    opacity: 1; /* Make the navbar visible */
+}
+
+header.hidden {
+    top: -7.5rem; /* Hide the navbar again when scrolling up */
+    opacity: 0; /* Make the navbar invisible */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('../img/frogger-landing.png') no-repeat center center/cover;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 90%; /* Ensures it doesn’t overflow */
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem; /* Reduced padding for smaller screens */
+    border-radius: 0.625rem;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+#hero button, #downloadButton{
+    font-family: 'Press Start 2P', cursive; /* Ensure the button uses the arcade-ish font */
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 1.5rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    display: inline-block;
+    text-align: center;
+}
+
+#hero button:hover {
+    background-color: #004d40;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section p, section ul {
+    font-size: 1.25rem;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 48em) {
+    header {
+        padding: 0.5rem;
+        top: -7.5rem; /* Ensure the navbar is hidden initially on mobile */
+        opacity: 0; /* Make the navbar invisible initially on mobile */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    #hero button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, section ul {
+        font-size: 1rem;
+    }
+    #hero button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 30em) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #hero h2 {
+        font-size: 1.5rem;
+    }
+
+    #hero p {
+        font-size: 0.875rem;
+    }
+
+    #hero button {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    section h2 {
+        font-size: 1.25rem;
+    }
+
+    section p, section ul {
+        font-size: 0.875rem;
+    }
+    #hero button {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}

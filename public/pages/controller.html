@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/controller.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    
+
+
+    <title>Frogger Resurrection</title>
+</head>
+<body>
+  <div class="client-select">
+    <label for="clientSelect">Seleziona Client:</label>
+    <select id="clientSelect"></select>
+  </div>
+  
+    <!-- Code to handle the camera angle -->
+<!--
+<input tabindex="-1" type="radio" name="cam" id="cam1" />
+<input tabindex="-1" type="radio" name="cam" id="cam2" />
+<input tabindex="-1" type="radio" name="cam" id="cam3" />
+<input tabindex="-1" type="radio" name="cam" id="cam4" />
+<input tabindex="-1" type="radio" name="cam" id="cam5" />
+<input tabindex="-1" type="radio" name="cam" id="cam6" checked />
+<input tabindex="-1" type="radio" name="cam" id="cam7" />
+<input tabindex="-1" type="radio" name="cam" id="cam8" />
+<input tabindex="-1" type="radio" name="cam" id="cam9" />
+
+<div id="camera">
+  <label for="cam1"></label>
+  <label for="cam2"></label>
+  <label for="cam3"></label>
+  <label for="cam4"></label>
+  <label for="cam5"></label>
+  <label for="cam6"></label>
+  <label for="cam7"></label>
+  <label for="cam8"></label>
+  <label for="cam9"></label>
+</div>
+ -->
+
+
+ <article id="snes-gamepad" aria-label="SNES controller">
+    <!-- cord -->
+    <div id="cord"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    
+    <!-- Buttons on top-->
+    <button id="l" class="is3d control">Top left<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></button>
+    <button id="r" class="is3d control">Top Right<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></button>
+    
+    <!-- frame -->
+    <div class="face is3d"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    
+    <!-- Letters and Text -->
+    <h1>TRENTELLODERS</h1>
+    <p>FROGGER RESURRECTION</p>
+    
+    <p class="letter letter-x" aria-hidden="true">X</p>
+    <p class="letter letter-y" aria-hidden="true">Y</p>
+    <p class="letter letter-a" aria-hidden="true">A</p>
+    <p class="letter letter-b" aria-hidden="true">B</p>
+    <p class="letter-start" aria-hidden="true">START</p>
+    <p class="letter-select" aria-hidden="true">SELECT</p>
+    
+    <!-- directional buttons + axis -->
+    <button id="up" class="control">Up</button>
+    <button id="left" class="control">Left</button>
+    <button id="right" class="control">Right</button>
+    <button id="down" class="control">Down</button>
+    <div class="axis is3d"><div style="--z:1"></div><div style="--z:2"></div><div style="--z:3"></div><div style="--z:4"></div><div style="--z:5"></div><div style="--z:6"></div></div>
+    
+    <!-- Menu buttons (start/select) -->
+    <button id="select" class="is3d control">Select<div style="--z:1"></div><div style="--z:2"></div><div style="--z:3"></div><div style="--z:4"></div></button>
+    <button id="start" class="is3d control">Start<div style="--z:1"></div><div style="--z:2"></div><div style="--z:3"></div><div style="--z:4"></div></button>
+    
+    <!-- Action buttons -->
+    <div class="buttons">
+      <button id="x" class="circle is3d control ">x<div></div><div></div><div></div><div></div></button>
+      <button id="y" class="circle is3d control">y<div></div><div></div><div></div><div></div></button>
+      <button id="a" class="circle is3d control">a<div></div><div></div><div></div><div></div></button>
+      <button id="b" class="circle is3d control">b<div></div><div></div><div></div><div></div></button>
+    </div>
+    <script type="module" src="../js/controller.js"></script>
+  </article>
+  
+
+
+
+
+</body>
+</html>
+
+
+
